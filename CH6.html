@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CH6.css">
+    <title>Form HTML</title>
+  </head>
+
+  <body>
+   
+      <h2 style="text-align: center;">Survei Kepuasaan Pelanggan</h2>
+      <h3 style="text-align: center;">Layanan Aplikasi Tivel (Tiket Travel)</h3>
+      <h4 style="text-align: center;">PT Lowkey Syahfa</h4>
+      <h5 style="text-align: center;">"Kepuasan anda adalah kebahagiaan kami"</h5>
+      <form action="#" class="container">
+          <fieldset>
+          <p id="pnama">    
+            <label for="nama">Nama</label><br>
+            <input type="text" name="nama" id="nama"/>
+            <br />
+          </p>  
+
+          <p id="pumur">
+            <label for="umur">Umur</label><br>
+            <input type="number" min="10" max="90" name="umur" id="umur"/>
+            <br />
+          </p>
+
+          <p id="pjk">
+            <label for="jeniskelamin">Jenis Kelamin</label><br>
+            <input type="radio" name="jeniskelamin" id="jeniskelamin" value="laki-laki" /> Laki-laki
+            <input type="radio" name="jeniskelamin" id="jeniskelamin" value="perempuan" /> Perempuan
+            <br />
+          </p> 
+
+          <p id="pnk">
+            <label for="nilaikepuasan">Nilai Kepuasan (1-5)</label>
+            <input type="number" min="1" max="5" name="nilaikepuasan" id="nilaikepuasan" style="height: 18px; width: 44px;"/>
+            <br />
+          </p>
+          
+          <p id="ptp">
+            <label for="tauproduk">Darimana anda mengetahui aplikasi kami</label><br>
+            <input type="checkbox" name="tauproduk" id="tauproduk" value="Sosial Media" /> Sosial media <br>
+            <input type="checkbox" name="tauproduk" id="tauproduk" value="Teman" /> Teman <br>
+            <input type="checkbox" name="tauproduk" id="tauproduk" value="Internet" /> Internet <br>
+            <br />
+          </p>
+          
+          <p id="plyn">
+            <label for="layanan">Apakah anda menggunakan layanan kami?</label><br>
+            <input type="radio" name="layanan" id="layanan" value="Ya" /> Ya
+            <input type="radio" name="layanan" id="layanan" value="Tidak" /> Tidak
+            <br />
+          </p>
+
+          <p id="pks">
+            <label for="kritiksaran">Kritik dan Saran</label><br>
+            <textarea name="kritiksaran" id="kritiksaran" cols="30" rows="3"></textarea>
+            <br />
+          </p>
+
+          <p>
+            <input type="button" id="btn" value="Kirim" onclick="tampilData()"/>
+          </p>
+        </fieldset>
+        </form>
+        <script src="jsCH6.js"></script>
+  </body>
+</html>
